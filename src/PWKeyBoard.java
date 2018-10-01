@@ -25,7 +25,7 @@ public class PWKeyBoard extends JFrame{
     private JButton btnSubmit=new JButton("Submit");
 
     private Font font=new Font(null,Font.BOLD,20);
-    private ArrayList<Integer> A=new ArrayList<Integer>();
+    private ArrayList<Integer> A= new ArrayList<>();
 
     public PWKeyBoard(){
         init();
@@ -34,7 +34,6 @@ public class PWKeyBoard extends JFrame{
     public PWKeyBoard(Login login){
         this.login=login;
         init();
-        this.setBounds(100,100,250,300);
     }
     public PWKeyBoard(Login login,int x,int y){
         this.login=login;
