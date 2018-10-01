@@ -9,7 +9,8 @@ public class Login extends JFrame {
         login.setVisible(true);
     }
 
-
+    private boolean isKeyBoardOpen= false;
+    private PWKeyBoard kb;
     private JPanel P1=new JPanel(new GridLayout(2,2,3,3));
     private JPanel P2=new JPanel(new GridLayout(1,3,3,3));
     private JLabel LAC=new JLabel("AC:");
@@ -37,8 +38,15 @@ public class Login extends JFrame {
         KeyBoard.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                PWKeyBoard kb=new PWKeyBoard(Login.this,getX()-250,getY());
-                kb.setVisible(true);
+                //this.setEnabled(false);
+                this.h
+                if(kb==(null))
+                {
+                    kb=new PWKeyBoard(Login.this,getX()-250,getY());
+                    kb.setVisible(true);
+                }
+                else
+                    kb.setVisible(true);
             }
         });
         Login.addActionListener(new AbstractAction() {

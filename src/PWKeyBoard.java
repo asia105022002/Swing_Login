@@ -45,8 +45,7 @@ public class PWKeyBoard extends JFrame{
     private void init() {
         this.setTitle("keyboard");
         this.setBounds(x,y,250,300);
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setResizable(false);
+        setResizable(false);
         Container container = this.getContentPane();
         container.setLayout(new BorderLayout(3,3));
         container.add(PF,BorderLayout.NORTH);
